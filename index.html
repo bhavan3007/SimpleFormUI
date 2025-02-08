@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <form class="box">
+        <div class="heading">Upload Your Details</div>
+        <table cellspacing="30">
+            <tr>
+                <td><input type="text" id="firstName" class="input-field" placeholder="Enter First Name" required></td>
+                <td><input type="text" id="lastName" class="input-field" placeholder="Enter Last Name" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="userName" class="input-field" placeholder="Enter UserName" required></td>
+                <td><input type="email" id="email" class="input-field" placeholder=" Enter Email" required></td>
+            </tr>
+            <tr>
+                <td><input type="password" id="password" class="input-field" placeholder="Enter Password" required></td>
+                <td><input type="date" id="dob" class="input-field" placeholder="Date of Birth" required></td>
+            </tr>
+            <tr>
+                <td><input type="tel" class="input-field" placeholder="Enter Mobile No"></td>
+                <td>
+                    <select name="c1" class="input-field">
+                        <option value="" selected>Select your PG Qualification</option>
+                        <option value="pgqualification">MCA</option>
+                        <option value="pgqualification">MBA</option>
+                        <option value="pgqualification">ME</option>
+                        <option value="pgqualification">M.Sc</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <label for="name">Gender</label><br>
+        <div class="gender">
+            <input type="radio" id="name" name="gender" value="male"> Male
+            <input type="radio" id="name" name="gender" value="female"> Female
+            <input type="radio" id="name" name="gender" value="transgender"> Transgender<br>
+
+        </div>
+        <label for="address">Address</label><br>
+        <textarea id="address" rows="10" cols="20" placeholder="Type here address"></textarea><br>
+        <label for="hobbies">Hobbies</label><br>
+        <textarea id="hobbies" rows="10" cols="20" placeholder="Your hobbies"></textarea><br>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>  
+</body>
+</html>
